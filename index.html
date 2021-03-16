@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo/Reservia@3x.png" />
     <script src="https://kit.fontawesome.com/dcd97a5f9a.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 </head>
@@ -22,29 +23,29 @@
                 <ul>
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
-                    <li><a id="login" href="#">S'inscrire</a></li>
                 </ul>
+                <p><a id="login" href="#">S'inscrire</a></p>
             </nav>
         </header>
         <main id="main">
             <section id="recherche">
-                <div class="recherche r1">
-                    <h2>Trouvez votre hébergements pour des vacances de rêves</h2>
+                <div class="recherche search1">
+                    <h2>Trouvez votre hébergements pour des vacances de rêve</h2>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <div class="recherche r2">
+                <div class="recherche search_input">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" placeholder="Marseille, France">
-                    <button type="button">Rechercher</button>
+                    <input type="text" type="search" value=" Marseille, France">
+                    <button type="button" type="submit">Rechercher</button>
                 </div>
-                <div class="recherche r3">
-                    <span>Filtres</span>
-                    <button><i class="fas fa-money-bill-wave"></i>Économique</button><button><i
-                            class="fas fa-child fa-fw"></i>Familial</button>
-                    <button><i class="fas fa-heart"></i>Romantique</button>
-                    <button><i class="fas fa-dog"></i>Animaux autorisés</button>
+                <div class="recherche search_filters">
+                    <span id="filtres">Filtres</span>
+                    <button><span class="icones_filtres"><i class="fas fa-money-bill-wave fa-fw"></i></span>Économique</button>
+                    <button><span class="icones_filtres"><i class="fas fa-child fa-fw"></i></span>Familial</button>
+                    <button><span class="icones_filtres"><i class="fas fa-heart fa-fw"></i></span>Romantique</button>
+                    <button><span class="icones_filtres"><i class="fas fa-dog fa-fw"></i></span>Animaux autorisés</button>
                 </div>
-                <div class="recherche r4">
+                <div class="recherche search_info">
                     <p><small><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</small>
                     </p>
                 </div>
