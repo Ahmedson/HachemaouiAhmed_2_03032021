@@ -27,7 +27,7 @@ ul{
     list-style-type: none;
 }
 
-#login, h2, h4, .recherche button, .search_input input, #filtres{
+#login, h2, h4, .recherche button, .search_input input, #filtres, .afficher_plus{
     font-weight: bold;
 }
 
@@ -96,7 +96,7 @@ button{
     transform: scaleX(1); 
 }
 
-/* Section recherche */
+/* Research section */
 
 #recherche{
     display: flex;
@@ -146,10 +146,10 @@ h2{
 }
 
 .search_input button:hover{
-    background-color: rgb(224, 235, 253);
-    color: #0065FC;
-    border: 1px solid #0065FC;
-    font-size: 1.25em;
+    /* background-color: rgb(224, 235, 253); */
+    /* color: #0065FC; */
+    /* border: 1px solid #0065FC; */
+    font-size: 1.20em;
 }
 
 .search_filters button{
@@ -202,6 +202,171 @@ h2{
     border: 2px solid #F2F2F2;
 }
 
+/* Section hébergements */
+
+#hebergements{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#hebergements h2{
+    margin-bottom: 25px;
+}
+
+.afficher_plus{
+    margin-top: 5%;
+}
+
+#hebergements>div:nth-child(1){
+    flex: 2.5;
+    margin-right: 25px;
+}
+
+#hebergements>div:nth-child(2){
+    flex: 1;
+    margin-left: 25px;
+}
+
+.hebergements{
+    background-color: #F2F2F2;
+    padding: 40px;
+    border-radius: 1em;
+}
+
+.hebergements a{
+    display: block;
+}
+
+.H_container{
+    /* display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    justify-content: center;
+    gap: 30px;
+}
+
+.fa-chart-line{
+    padding-left: 35%;
+}
+
+.populaires .H_container{
+    grid-template-columns: 1fr;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 200px;
+    border-radius: 1.25em;
+    box-shadow: 0 0 10px rgba(66, 66, 66, 0.3);
+    transition: all 0.5s;
+}
+
+.cards:hover{
+
+    box-shadow: 0 0 10px rgba(66, 66, 66, 1);
+    transform: scale(1.07);
+}
+
+.populaires .cards{
+    flex-direction: row;
+    width: 330px;
+    height: 145px;
+}
+
+.cards>div:nth-child(1){
+    background-size: cover;
+    background-position: 50% 75%;
+    border-top-left-radius: 1.25em;
+    border-top-right-radius: 1.25em;
+    border: 5px solid #fff;
+    height: 70%;
+}
+
+.populaires .cards>div:nth-child(1){
+    width: 40%;
+    height: 100%;
+    border-bottom-left-radius: 1.25em;
+    border-top-right-radius: 0;
+}
+
+.name_price_stars{
+    /* display: inline-block; */
+    background-color: white;
+    padding-left: 10px;
+    border-bottom-left-radius: 1.25em;
+    border-bottom-right-radius: 1.25em;
+    border: 5px solid #fff;
+    flex: 1;
+}
+
+.populaires .name_price_stars{
+    padding-top: 5px;
+    border-top-right-radius: 1.25em;
+    border-bottom-left-radius: 0;
+}
+
+.populaires .name_price_stars i{
+    margin-top:  50px;
+}
+
+.name_price_stars h4{
+    font-size: 1em;
+}
+
+.name_price_stars p{
+    font-size: 0.8em;
+    padding: 3px 0;
+    margin-bottom: auto;
+}
+
+.name_price_stars i{
+    font-size: 0.7em;
+    color: #0065FC;
+    padding-bottom: 7px;
+}
+
+.name_price_stars i.gris{
+    color: rgb(213, 213, 213);
+}
+
+.A_la_cannebiere{
+    background: url(img/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+.H_du_port{
+    background: url(img/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+.H_les_mouettes{
+    background: url(img/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+.H_de_la_mer{
+    background: url(img/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+.A_le_panier{
+    background: url(img/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+.H_chez_amina{
+    background: url(img/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+/* *** */
+
+.H_soleil_matin{
+    background: url(img/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+.au_coeur_de_l_eau{
+    background: url(img/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+.H_bleu_et_blanc{
+    background: url(img/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
 /* Footer */
 
 footer#footer{
