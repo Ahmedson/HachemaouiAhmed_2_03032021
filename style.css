@@ -19,7 +19,7 @@ a{
     color: black;   
 }
 
-a:hover, #login, .search_filters i{
+#header a:hover, #footer a:hover, #login, .search_filters i{
     color: #0065FC;
 }
 
@@ -31,11 +31,15 @@ ul{
     font-weight: bold;
 }
 
-h2,h4{
+h2,h4, .search_input button:hover, .icones_filtres{
     font-size: 1.25em;
 }
 
-button{
+#hebergements h2, #activites h2{
+    margin-bottom: 25px;
+}
+
+button, .afficher_plus{
     cursor: pointer;
 }
 
@@ -45,7 +49,6 @@ button{
     display: flex;
     justify-content: space-between;
 }
-
 
 /* HEADER */
 
@@ -62,6 +65,7 @@ button{
     align-items: center;
     margin-right: 40px;
 }
+
 #nav>ul{
     display: flex;
 }
@@ -74,11 +78,9 @@ button{
 #nav>ul>li:nth-child(1){
     width: 130px;
 }
-
 #nav>ul>li:nth-child(2){
     width: 110px;
 }
-
 #nav p{
     width: 90px;
 }
@@ -141,15 +143,8 @@ h2{
     width: 130px;
     border: none;
     border-top-right-radius: 13px;
-    border-bottom-right-radius: 13px;
+    border-bottom-right-radius: 13px; 
     transition: all 0.5s;
-}
-
-.search_input button:hover{
-    /* background-color: rgb(224, 235, 253); */
-    /* color: #0065FC; */
-    /* border: 1px solid #0065FC; */
-    font-size: 1.20em;
 }
 
 .search_filters button{
@@ -166,7 +161,6 @@ h2{
     position: relative;
     left: -3px;
     vertical-align: middle;
-    font-size: 1.2em;
     margin-right: 10px;
     padding: 13px;
     border-radius: 50%;
@@ -210,10 +204,6 @@ h2{
     margin-top: 15px;
 }
 
-#hebergements h2{
-    margin-bottom: 25px;
-}
-
 .afficher_plus{
     margin-top: 5%;
 }
@@ -239,10 +229,6 @@ h2{
 }
 
 .H_container{
-    /* display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
     justify-content: center;
@@ -268,7 +254,6 @@ h2{
 }
 
 .cards:hover{
-
     box-shadow: 0 0 10px rgba(66, 66, 66, 1);
     transform: scale(1.07);
 }
@@ -296,7 +281,6 @@ h2{
 }
 
 .name_price_stars{
-    /* display: inline-block; */
     background-color: white;
     padding-left: 10px;
     border-bottom-left-radius: 1.25em;
@@ -353,20 +337,94 @@ h2{
 .H_chez_amina{
     background: url(img/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
-
-/* *** */
-
+/*****/
 .H_soleil_matin{
     background: url(img/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
 }
-
 .au_coeur_de_l_eau{
     background: url(img/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg);
 }
-
 .H_bleu_et_blanc{
     background: url(img/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
+
+/* Activities section */
+
+#activites{
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0;
+}
+
+.activites{
+    display: flex;
+    flex-direction: column;
+    height: 445px;
+    /* align-items: stretch; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.activites>a>div{
+    display: flex;
+    align-items: flex-end;
+    width: 300px;
+    border-radius: 1em;
+    margin: 0 23px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 10px rgba(66, 66, 66, 0.3);
+    transition: all 0.5s;
+}
+
+.activites>a>div:hover{
+    box-shadow: 0 0 10px rgba(66, 66, 66, 1);
+    transform: scale(1.07);
+}
+
+.activites>a>div.vieux_port{
+    margin-left: 0;
+}
+
+.activites h4{
+    background-color: #fff;
+    padding: 15px 0 15px 10px;
+    font-size: 1em;
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+    width: 100%;
+}
+
+.vieux_port{
+    background: url(img/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    height: 445px;
+}
+
+.fort_de_pomegues{
+    background: url(img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    height: 240px;
+}
+
+.iles_de_frioul{
+    background: url(img/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    height: 170px;
+}
+
+.parc_national{
+    background: url(img/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    height: 445px;
+}
+
+.notre_dame{
+    background: url(img/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    height: 195px;
+}
+
+.parc_longchamp{
+    background: url(img/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    height: 210px;
+}
+
 /* Footer */
 
 footer#footer{
