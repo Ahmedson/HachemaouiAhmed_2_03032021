@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
     <link rel="icon" type="image/png" href="img/logo/Reservia@3x.png" />
     <script src="https://kit.fontawesome.com/dcd97a5f9a.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
@@ -19,13 +20,15 @@
                     <img src="img/logo/Reservia.svg" alt="Logo Reservia">
                 </a>
             </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-                </ul>
+            <div id="nav_log">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#hebergements">Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
+                    </ul>
+                </nav>
                 <p><a id="login" href="#">S'inscrire</a></p>
-            </nav>
+            </div>
         </header>
         <main id="main">
             <section id="recherche">
@@ -35,8 +38,8 @@
                 </div>
                 <div class="recherche search_input">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" type="search" value=" Marseille, France">
-                    <button type="button" type="submit">Rechercher</button>
+                    <input type="search" value=" Marseille, France">
+                    <button type="submit"><i class="fas fa-search loupe"></i><span id="text_research">Rechercher</span></button>
                 </div>
                 <div class="recherche search_filters">
                     <span id="filtres">Filtres</span>
@@ -48,7 +51,7 @@
                         autorisés</button>
                 </div>
                 <div class="recherche search_info">
-                    <p><small><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</small>
+                    <p><small><i class="fas fa-info"></i></small><small>Plus de 500 logements sont disponibles dans cette ville</small>
                     </p>
                 </div>
             </section>
@@ -145,18 +148,20 @@
                 </div>
                 <div class="hebergements populaires">
                     <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
-                    <div class="H_container">
+                    <div class="H_container no_gap">
                         <a href="#">
                             <div class="cards">
                                 <div class="H_soleil_matin"></div>
                                 <div class="name_price_stars">
                                     <h4>Hôtel Le soleil du matin</h4>
                                     <p>Nuit à partir de <b>128€</b></p>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -166,11 +171,13 @@
                                 <div class="name_price_stars">
                                     <h4>Au cœur de l'eau Chambres d'hôtes</h4>
                                     <p>Nuit à partir de <b>71€</b></p>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star gris"></i>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star gris"></i>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -180,11 +187,13 @@
                                 <div class="name_price_stars">
                                     <h4>Hôtel Tout bleu et Blanc</h4>
                                     <p>Nuit à partir de <b>68€</b></p>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star gris"></i>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star gris"></i>
+                                    </div>
                                 </div>
                             </div>
                         </a>
