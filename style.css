@@ -124,6 +124,12 @@ h2{
     padding-bottom: 10px;
 }
 
+.search_input input, input[type="search"]{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+}
+
 .search_input i, .search_input input, .search_input button{
     border: 1px solid #F2F2F2;
 }

@@ -288,6 +288,7 @@
     .populaires .cards{
         height: 145px;
         margin: 0;
+        margin-bottom: 15px;
     }
     .populaires h2{
         position: relative;
