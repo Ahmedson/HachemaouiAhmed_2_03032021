@@ -242,7 +242,7 @@ h2{
 
 .H_container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
+    grid-template-columns: repeat(auto-fill, 30%);
     justify-content: center;
     gap: 30px;
 }
@@ -262,7 +262,7 @@ h2{
 .cards{
     display: flex;
     flex-direction: column;
-    width: 240px;
+    width: 100%;
     height: 200px;
     border-radius: 1.25em;
     box-shadow: 0 0 10px rgba(66, 66, 66, 0.3);
@@ -367,12 +367,10 @@ h2{
 }
 
 /* Activities section */
-
 #activites, .activites{
     display: flex;
     flex-direction: column;
 }
-
 #activites{
     margin: 60px 0;
 }
@@ -382,28 +380,23 @@ h2{
     justify-content: space-between;
     height: 445px;
 }
-
+.activites>a{
+    width: 25%;
+}
 .activites>a>div{
     display: flex;
     align-items: flex-end;
-    width: 300px;
     border-radius: 1em;
-    margin: 0 23px;
+    margin: 0 19px;
     background-size: cover;
     background-position: center;
     box-shadow: 0 0 10px rgba(66, 66, 66, 0.3);
     transition: all 0.5s;
 }
-
 .activites>a>div:hover{
     box-shadow: 0 0 10px rgba(66, 66, 66, 1);
     transform: scale(1.07);
 }
-
-.activites>a>div.vieux_port{
-    margin-left: 0;
-}
-
 .activites h4{
     background-color: #fff;
     padding: 15px 0 15px 10px;
@@ -417,45 +410,37 @@ h2{
     background: url(img/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     height: 445px;
 }
-
 .fort_de_pomegues{
     background: url(img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     height: 240px;
 }
-
 .iles_de_frioul{
     background: url(img/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     height: 170px;
 }
-
 .parc_national{
     background: url(img/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     height: 445px;
 }
-
 .notre_dame{
     background: url(img/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
     height: 195px;
 }
-
 .parc_longchamp{
     background: url(img/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
     height: 210px;
 }
 
 /* Footer */
-
 footer#footer{
     background-color: #F2F2F2;
     height: 215px;
 }
-
 #footer>div{
     padding-top: 40px;
     margin-left: 50px;
     width: 33%;
 }
-
 #footer li
 {
     margin: 15px 0;
