@@ -41,6 +41,9 @@ h2,h4, .search_input button:hover, .icones_filtres{
 #hebergements h2, #activites h2{
     margin-bottom: 25px;
 }
+#hebergements .populaires>h2{
+    margin-bottom: 10px;
+}
 
 button, .afficher_plus{
     cursor: pointer;
@@ -213,7 +216,7 @@ h2{
 }
 
 .afficher_plus{
-    margin-top: 5%;
+    margin-top: 51px;
 }
 
 #hebergements>div:nth-child(1){
@@ -229,6 +232,7 @@ h2{
 .hebergements{
     background-color: #F2F2F2;
     padding: 40px;
+    padding-bottom: 10px;
     border-radius: 1em;
 }
 
@@ -248,7 +252,7 @@ h2{
 }
 
 .fa-chart-line{
-    padding-left: 35%;
+    padding-left: 110px;
 }
 
 .populaires .H_container{

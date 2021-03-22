@@ -1,29 +1,24 @@
 @media all and (max-width : 1420px){
     /* section hebergements */
     .H_container{
-        grid-template-columns: repeat(auto-fill, 330px);
+        grid-template-columns: repeat(auto-fill, 320px);
     }
     .cards{
-        width: 330px;
+        width: 320px;
+    }
+    .afficher_plus{
+        margin-top: 5%;
+    }
+    .hebergements{
+        padding-bottom: 40px;
     }
 
     /* section activités */
-    .activites{
-        height: 600px;
-    }
     .activites>a>div{
-        width: 380px;
+        width: 280px;
         margin: auto;
     }
-    .vieux_port, .parc_national, .notre_dame{
-        height: 320px;
-    }
-    .iles_de_frioul{
-        height: 240px;
-    }
-    .parc_longchamp{
-        height: 240px;
-    }  
+    
     .activites>a>div.vieux_port{
         margin-left: auto;
     }
@@ -47,23 +42,20 @@
     .fa-chart-line{
         padding-left: 15px;
     }
-}
 
-@media all and (max-width : 1300px){
     .activites>a>div{
-        width: 360px;
+        width: 260px;
     }
 }
 
 @media all and (max-width : 1230px){
     /* section hebergements */
-    /* .H_container:nth-child(1){
-        grid-template-columns: repeat(auto-fill, 310px);
-        gap: 50px;
+    .H_container{
+        grid-template-columns: repeat(auto-fill, 290px);
     }
     .cards{
-        width: 310px;
-    } */
+        width: 290px;
+    }
 
     .populaires .H_container{
         display: flex;
@@ -71,30 +63,30 @@
     }
     .populaires .cards{
         margin: 20px;
-        width: 420px;
+        width: 405px;
         height: 160px;
+    }
+
+    .activites>a>div{
+        width: 240px;
+    }
+}
+
+@media all and (max-width : 1130px){
+    .H_container{
+        grid-template-columns: repeat(auto-fill, 410px);
+    }
+    .cards{
+        width: 410px;
     }
 
     .activites{
         height: 850px;
     }
     .activites>a>div{
-        width: 490px;
-        height: 250px;
-    }
-}
-
-@media all and (max-width : 1130px){
-    .H_container{
-        grid-template-columns: repeat(auto-fill, 400px);
-    }
-    .cards{
-        width: 410px;
-    }
-
-    .activites>a>div{
         width: 450px;
-    }
+        height: 250px;
+    } 
 }
 
 @media all and (max-width : 1090px){
@@ -149,12 +141,12 @@
     }
     .populaires{
         border-radius: 0;
-    }
+    } 
     .populaires h4{
         margin-top: 10px;
     }
 
-    #activites, #activites h2, .activites{
+    /* #activites,*/ #activites h2, .activites{
         margin-bottom: 0;
     }
     #activites h2{
@@ -162,18 +154,17 @@
     }
 
     .activites{
-        height: auto;
-    }
+        height: 850px;
+    } 
     .activites>a>div{
-        margin-bottom: 50px;
-        width: 88%;
+        width: 360px;
     }
 
     .H_container{
-        grid-template-columns: repeat(auto-fill, 590px);
+        grid-template-columns: repeat(auto-fill, 290px);
     }
     .cards{
-        width: 590px;
+        width: 290px;
         height: 230px;
     }
 }
@@ -193,6 +184,10 @@
         transform: scaleX(1); 
     }
 
+    .activites>a>div{
+        width: 310px;
+    }
+
     footer#footer{
         padding-bottom: 20px;
         flex-direction: column;
@@ -200,7 +195,7 @@
     }
 }
 
-@media all and (max-width : 690px){
+@media all and (max-width : 720px){
     .H_container{
         grid-template-columns: repeat(auto-fill, 100%);
     }
@@ -216,6 +211,18 @@
   
     .hebergements a{
         margin: auto;
+    }
+
+    #activites{
+        margin-bottom: 0;
+    }
+
+    .activites{
+        height: auto;
+    } 
+    .activites>a>div{
+        width: 100%;
+        margin-bottom: 30px;
     }
 
     #footer>div{
@@ -328,6 +335,7 @@
     }
     .populaires .cards{
         height: 145px;
+        margin: 0;
     }
     .populaires h2{
         position: relative;
@@ -363,10 +371,5 @@
     }
     .search_filters > button:nth-child(2){
         margin-right: 5px;
-    }
-
-    .populaires .cards {
-        margin-top: 0;
-        margin-bottom: 0;
     }
 }
