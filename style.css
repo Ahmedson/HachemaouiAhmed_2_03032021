@@ -17,12 +17,16 @@ main{
     margin: 0 50px;
 }
 
-a{
-    text-decoration: none;
-    color: black;   
+header a.block{
+    display: block;
 }
 
-#header a:hover, #footer a:hover, #login, .search_filters i{
+a{
+    text-decoration: none;
+    color: #000;   
+}
+
+#header a:hover, #footer a:hover, #nav a:active, #nav a:active, #login, .search_filters i{
     color: #0065FC;
 }
 
@@ -41,7 +45,7 @@ h2,h4, .search_input button:hover, .icones_filtres{
 #hebergements h2, #activites h2{
     margin-bottom: 25px;
 }
-#hebergements .populaires>h2{
+h2{
     margin-bottom: 10px;
 }
 
@@ -83,17 +87,11 @@ button, .afficher_plus{
     text-align: center;
 }
 
-#nav>ul>li:nth-child(1){
-    width: 130px;
-}
-#nav>ul>li:nth-child(2){
-    width: 110px;
-}
-#nav_log p{
-    width: 90px;
-}
+#nav>ul>li:nth-child(1){ width: 130px;} /* Hébergements */
+#nav>ul>li:nth-child(2){ width: 110px; } /* Activités */
+#nav_log p{ width: 90px;} /* S'inscrire */
 
-#nav a::before, #header p::before {
+#nav a::before, #nav_log p::before {
     display: block;
     content: '';
     margin-bottom: 40px;
@@ -101,8 +99,7 @@ button, .afficher_plus{
     transform: scaleX(0);  
     transition: transform 200ms ease-in-out;
 }
-
-#nav a:hover::before, #header p:hover::before{ 
+#nav a:hover::before, #nav_log p:hover::before{ 
     transform: scaleX(1); 
 }
 
@@ -112,11 +109,7 @@ button, .afficher_plus{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 300px;
-}
-
-h2{
-    margin-bottom: 15px;
+    min-height: 300px;
 }
 
 .search_input{
@@ -169,7 +162,7 @@ h2{
     margin: 0 15px;
     padding: 0 25px 0 0;
     height: 50px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 50px;
     border: 2px solid rgb(213, 213, 213);
     transition: all 0.5s;
@@ -181,18 +174,19 @@ h2{
     margin-right: 10px;
     padding: 12px;
     border-radius: 50%;
-    background-color: rgb(224, 235, 253);
+    /* background-color: rgb(224, 235, 253); */
+    background-color: #E0EBFD;
     transition: all 0.3s;
 }
 
 .search_filters button:hover{
-    color: white;
+    color: #fff;
     background-color: #0065FC;
     border-color: #0065FC;
 }
 
 .search_filters button:hover .icones_filtres{
-    background-color: white;
+    background-color: #fff;
     left: 2px;
     padding: 8px;
 }
@@ -220,16 +214,10 @@ h2{
     justify-content: space-between;
     margin-top: 15px;
 }
-
-.afficher_plus{
-    margin-top: 51px;
-}
-
 #hebergements>div:nth-child(1){
     flex: 2.5;
     margin-right: 25px;
 }
-
 #hebergements>div:nth-child(2){
     flex: 1;
     margin-left: 25px;
@@ -239,11 +227,11 @@ h2{
     background-color: #F2F2F2;
     padding: 40px;
     padding-bottom: 10px;
-    border-radius: 1em;
+    border-radius: 1.5rem;
 }
 
-.hebergements a{
-    display: block;
+.afficher_plus{
+    margin-top: 51px;
 }
 
 .H_container{
@@ -252,7 +240,6 @@ h2{
     justify-content: center;
     gap: 30px;
 }
-
 .no_gap{
     gap: 0;
 }
@@ -261,26 +248,25 @@ h2{
     padding-left: 110px;
 }
 
-.populaires .H_container{
+.populaires .HP_container{
     grid-template-columns: 1fr;
 }
 
 .cards{
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 200px;
     border-radius: 1.25em;
     box-shadow: 0 0 10px rgba(66, 66, 66, 0.3);
     transition: all 0.5s;
 }
-
 .cards:hover{
     box-shadow: 0 0 10px rgba(66, 66, 66, 1);
     transform: scale(1.07);
 }
 
-.populaires .cards{
+/* .populaires  */
+.cards_populaires{
     flex-direction: row;
     margin: 20px 0;
     width: 330px;
@@ -293,10 +279,10 @@ h2{
     border-top-left-radius: 1.25em;
     border-top-right-radius: 1.25em;
     border: 5px solid #fff;
-    height: 70%;
+    height: 65%;
 }
 
-.populaires .cards>div:nth-child(1){
+.cards_populaires>div:nth-child(1){
     width: 40%;
     height: 100%;
     border-bottom-left-radius: 1.25em;
@@ -305,20 +291,18 @@ h2{
 
 .name_price_stars{
     position: relative;
-    background-color: white;
+    background-color: #fff;
     padding-left: 10px;
     border-bottom-left-radius: 1.25em;
     border-bottom-right-radius: 1.25em;
     border: 5px solid #fff;
     flex: 1;
 }
-
 .populaires .name_price_stars{
     padding-top: 5px;
     border-top-right-radius: 1.25em;
     border-bottom-left-radius: 0;
 }
-
 .populaires .stars{
     position: absolute;
     bottom: 5px;
@@ -327,20 +311,17 @@ h2{
 .name_price_stars h4{
     font-size: 1em;
 }
-
 .name_price_stars p{
     font-size: 0.8em;
     padding: 3px 0;
 }
-
 .name_price_stars i{
     font-size: 0.7em;
     color: #0065FC;
     padding-bottom: 7px;
 }
-
 .name_price_stars i.gris{
-    color: rgb(213, 213, 213);
+    color: #D5D5D5;
 }
 
 .A_la_cannebiere{
@@ -387,9 +368,9 @@ h2{
     height: 445px;
 }
 .activites>a{
-    width: 25%;
+    width: 22%;
 }
-.activites>a>div{
+.activites>a{
     display: flex;
     align-items: flex-end;
     border-radius: 1em;
@@ -399,7 +380,7 @@ h2{
     box-shadow: 0 0 10px rgba(66, 66, 66, 0.3);
     transition: all 0.5s;
 }
-.activites>a>div:hover{
+.activites>a:hover{
     box-shadow: 0 0 10px rgba(66, 66, 66, 1);
     transform: scale(1.07);
 }
@@ -440,7 +421,7 @@ h2{
 /* Footer */
 footer#footer{
     background-color: #F2F2F2;
-    height: 215px;
+    min-height: 215px;
 }
 #footer>div{
     padding-top: 40px;
