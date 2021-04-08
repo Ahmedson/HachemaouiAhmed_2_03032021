@@ -132,6 +132,10 @@
         height: 240px;
         margin: auto;
     }
+
+    .activites img{
+        height: 240px;
+    }
     
     footer#footer{
         padding-bottom: 20px;
@@ -297,6 +301,10 @@
     .activites > a{
         height: 190px;
         margin-bottom: 20px;
+    }
+
+    .activites img{
+        height: 190px;
     }
 }
 

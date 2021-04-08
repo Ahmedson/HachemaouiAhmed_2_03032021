@@ -273,16 +273,15 @@ button, .afficher_plus{
     height: 145px;
 }
 
-.cards>div:nth-child(1){
-    background-size: cover;
-    background-position: 50% 75%;
+.cards>img{
+    object-fit: cover;
     border-top-left-radius: 1.25em;
     border-top-right-radius: 1.25em;
     border: 5px solid #fff;
     height: 65%;
 }
 
-.cards_populaires>div:nth-child(1){
+.cards_populaires>img{
     width: 40%;
     height: 100%;
     border-bottom-left-radius: 1.25em;
@@ -324,35 +323,6 @@ button, .afficher_plus{
     color: #D5D5D5;
 }
 
-.A_la_cannebiere{
-    background: url(img/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-}
-.H_du_port{
-    background: url(img/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-}
-.H_les_mouettes{
-    background: url(img/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-}
-.H_de_la_mer{
-    background: url(img/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-}
-.A_le_panier{
-    background: url(img/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-}
-.H_chez_amina{
-    background: url(img/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-}
-/*****/
-.H_soleil_matin{
-    background: url(img/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-}
-.au_coeur_de_l_eau{
-    background: url(img/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg);
-}
-.H_bleu_et_blanc{
-    background: url(img/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-}
-
 /* Activities section */
 #activites, .activites{
     display: flex;
@@ -367,54 +337,54 @@ button, .afficher_plus{
     justify-content: space-between;
     height: 445px;
 }
+
 .activites>a{
     width: 22%;
-}
-.activites>a{
-    display: flex;
-    align-items: flex-end;
-    border-radius: 1em;
-    margin: 0 19px;
-    background-size: cover;
-    background-position: center;
-    box-shadow: 0 0 10px rgba(66, 66, 66, 0.3);
+    position: relative;
     transition: all 0.5s;
 }
-.activites>a:hover{
-    box-shadow: 0 0 10px rgba(66, 66, 66, 1);
-    transform: scale(1.07);
+.activites img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(66, 66, 66, 0.3);
 }
+
+
+
 .activites h4{
+    position: absolute;
+    bottom: 0;
     background-color: #fff;
     padding: 15px 0 15px 10px;
     font-size: 1em;
     border-bottom-left-radius: 0.8em;
     border-bottom-right-radius: 0.8em;
     width: 100%;
+    transition: all 0.5s;
+}
+
+.activites a:hover {
+    transform: scale(1.07);
 }
 
 .vieux_port{
-    background: url(img/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     height: 445px;
 }
 .fort_de_pomegues{
-    background: url(img/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     height: 240px;
 }
 .iles_de_frioul{
-    background: url(img/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     height: 170px;
 }
 .parc_national{
-    background: url(img/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     height: 445px;
 }
 .notre_dame{
-    background: url(img/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
     height: 195px;
 }
 .parc_longchamp{
-    background: url(img/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
     height: 210px;
 }
 
